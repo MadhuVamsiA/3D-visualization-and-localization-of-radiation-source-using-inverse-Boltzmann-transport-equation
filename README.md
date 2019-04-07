@@ -1,9 +1,14 @@
 # 3D-visualization-and-localization-of-radiation-source-using-inverse-Boltzmann-transport-equation
 Description of folders:
+
 Dataset - consits of dataset (x,y,z coordinates and dose values)
+
 KNN approach - code for KNN approach and results of KNN approach (1D, 2D and 3D)
+
 PPT - PPT that includes detailed explanation of codes, formula description and applications.
+
 Line as source - Analytical code for line and result
+
 Source as n points - N points visulization and analytical approach codes and their results
 
 
