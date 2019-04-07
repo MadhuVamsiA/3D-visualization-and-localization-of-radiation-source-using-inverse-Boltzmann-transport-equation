@@ -7,17 +7,17 @@ we have used three approaches
 3. Visulization 
 
 KNN approach:
-We have wriiten code for KNN approach in matlab for given dataset.
+We have wriiten CPU and GPU  code for KNN approach for given dataset in matlab using MATLAB parallel computing toolbox.
 KNN folder consits of code and results of 1D,2D and 3D visulization (in both fig and png format)
 In this approach we are visulizing the given data set according to their intensity of dose that it received at a point (xi,yi,zi)
-The K nearest points from the source location will receive the highest dose than other. The points which are too far from the source location will recive less intensity of dose. Such that, the source will be located nearer to the points which are having high intensity of dose.
-In results of KNN it was showed that the points nearer to source are darker in color than points far away from source. In this way we can find the location and geomentry of any given source.
+K nearest points from the source location will receive the highest dose than other points. The points which are too far from the source location will recive less intensity of dose. Therefore, the source will be located nearer to the points which are having high intensity of dose.
+In results of KNN it has been showed that the points nearer to source are darker in color than points far away from source. In this way we can find the location and geomentry of any given source. This code requires less computation power.
 
 
 Analytical approach:
-We have written code for Analytical approach in MATLAB for given dataset.
+We have written code using  Analytical approach in MATLAB for given dataset.
 We are considering that source is made up of n points and trying to find these n points location.
-In our dataset we have considered n target points (points that recive dose from source) and calculated n linear equations from these points to source (made up of n points) which have 'n' unknow variables. By solving these n equations we can get the values for these 'n' unknows variables which gives the co-ordinates of these 'n' points.
+In our dataset we have considered n target points (points that recive dose from source) and calculated n linear equations from these points to source (made up of n points) which have 'n' unknow variables. By solving these n equations we can get the values for these 'n' unknows variables which gives the co-ordinates of these 'n' points.This method requires high computation power so we have used AGANAYA cluster ( processing power of 270 TFLOPS and 6440 cores + 20 9984 core GPU ). 
 
 Visulization approach:
 From the formula of linear Boltzmann transport equation it was clear that the source and target points are separeted by distance D (radius). So, if we have drawn spheres from each n target points with radius 'r' (r is the distance between source and target points) all these spheres will intersect at a common region where the source is located at. 
