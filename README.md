@@ -1,4 +1,12 @@
 # 3D-visualization-and-localization-of-radiation-source-using-inverse-Boltzmann-transport-equation
+Description of folders:
+Dataset - consits of dataset (x,y,z coordinates and dose values)
+KNN approach - code for KNN approach and results of KNN approach (1D, 2D and 3D)
+PPT - PPT that includes detailed explanation of codes, formula description and applications.
+Line as source - Analytical code for line and result
+Source as n points - N points visulization and analytical approach codes and their results
+
+
 Summary of the project (for more details please refer PPT):
 
 Occupational workers carry wearable sensors for radiation dose data logging, datasets are generated due to movement of workers. A computer code running on GPU/CPU is required which can solve reverse Boltzman Transport Equations (BTE) in offline mode using collected datasets (X,Y,Z,Dose) for given area &amp; do 3D visualization of radiation source in that area. Radiation protection program can take corrective measures for removal of unwanted sources.
